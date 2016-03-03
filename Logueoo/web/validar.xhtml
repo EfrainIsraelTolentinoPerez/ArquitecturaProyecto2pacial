@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+   <h:head>
+       <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, multilanguagePage: true}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <title>Confirmarciòn</title>
+        
+    </h:head>
+    <h:body>
+       <h2>Aqui se realizara la confirmacion</h2>
+<h:panelGrid columns="2"
+    columnClasses="rightalign-bold,normal">
+    
+    <h:outputText value="Nombre: " style="color: aqua"/>
+<h:outputText
+    value="#{ingresar.nombre}" />
+<h:outputText value="Apellidos:" style="color: aqua"/>
+<h:outputText value="#{ingresar.apeido}" />
+<h:outputText value="Domicilio:" style="color: aqua"/>
+<h:outputText value="#{ingresar.domicilio}" />
+<h:outputText value="Sexo:" style="color: aqua"/>
+<h:outputText value="#{ingresar.sexo}"/>
+<h:outputText value="Numero de Hermanos:" style="color: aqua"/>
+<h:outputText value="#{ingresar.hermanos}" />
+<h:outputText value="Salario:" style="color: aqua"/>
+<h:outputText value="$#{ingresar.salario}" />     
+</h:panelGrid>
+       
+       <h:form>
+           <h:commandButton value="Ingresar Usuario" style="background-color: coral" />  
+       </h:form>
+       
+       <h:body style="background-color: deeppink"/>
+       
+    </h:body>
+</html>
