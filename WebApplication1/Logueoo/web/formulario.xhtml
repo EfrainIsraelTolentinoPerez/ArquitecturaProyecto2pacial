@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Formulario</title>
+        <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.vertical, multilanguagePage: true}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </h:head>
+    <h:body>
+        <h:messages infoStyle="color: red;list-style:none;"/>
+        
+        <h:outputLabel value="Pudiste hacerlo bien 
+                        Nuestro Menu de Opciones"/>
+        <h:form >
+        <h:panelGrid columns="1">
+
+<h:commandButton id="register" value="Registrarse" action="open" style="background-color: gold" />
+
+            
+            <h:outputText escape="false" value="#{ingresar.result}"/>
+            <h:commandButton id="Acerca_de" value="Acerca de" action="open" style="background-color: gold" />
+            <h:outputText escape="false" value="#{ingresar.result}"/>
+            <h:commandButton id="Platillo" value="Platillo" action="open" style="background-color: gold" />
+            <h:outputText escape="false" value="#{ingresar.result}"/>
+            <h:commandButton id="Postres" value="Postres" action="open" style="background-color: gold" />
+            <h:outputText escape="false" value="#{ingresar.result}"/>
+            <h:commandButton id="Bebidas" value="Bebidas" action="open" style="background-color: gold" />
+            <h:outputText escape="false" value="#{ingresar.result}"/>
+            <h:commandButton id="Empleados" value="Empleados" action="open" style="background-color: gold" />
+            <h:outputText escape="false" value="#{ingresar.result}"/>
+            <h:commandButton id="Pedidos" value="Pedidos" action="open" style="background-color: gold" />
+            <h:outputText escape="false" value="#{ingresar.result}"/>
+            <h:commandButton id="Contacto" value="Contacto" action="open" style="background-color: gold" />
+            <h:outputText escape="false" value="#{ingresar.result}"/>
+            <h:commandButton id="Salir" value="Salir" action="close" style="background-color: gold" />
+            <h:outputText escape="false" />
+            </h:panelGrid>
+        </h:form>
+        <h:body style="background-color: red"/>
+        
+    </h:body>
+</html>
+
+
